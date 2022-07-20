@@ -1,12 +1,8 @@
 import { Header } from "src/Layout/Header";
-import { FC, ReactElement } from "react";
 import { Footer } from "src/Layout/Footer";
+import { CustomLayout } from "next";
 
-type LayoutProps = Required<{
-  readonly children: ReactElement;
-}>;
-
-export const Layout: FC<LayoutProps> = (props) => {
+export const Layout: CustomLayout = (props) => {
   return (
     <div className="my-0 mx-auto w-full max-w-screen-xl px-36 sm:px-5">
       <Header />

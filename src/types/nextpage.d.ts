@@ -1,16 +1,17 @@
-import type { NextPage, NextPageWithLayout } from "next";
-import type { AppProps } from "next/app";
-import type { ReactElement } from "react";
 
-// レイアウトを適用させるための型拡張
+import type { NextPage } from "next";
+import type { AppProps } from "next/app";
+
+type PageAttributes = { getLayout?: (page: ReactElement) => JSX.Element };
+
 declare module "next" {
-  type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
-    getLayout?: (page: ReactElement) => ReactElement;
-  };
+  type CustomLayout = NonNullable<PageAttributes["getLayout"]>;
+  type CustomNextPage<P = Record<string, unknown>, IP = P> = NextPage<P, IP> &
+    PageAttributes;
 }
 
 declare module "next/app" {
-  type AppPropsWithLayout<P = {}> = AppProps<P> & {
-    Component: NextPageWithLayout<P>;
-  };
+  type CustomAppPage<P = Record<string, unknown>> = (
+    props: AppProps<P> & { Component: NextPage & PageAttributes }
+  ) => JSX.Element;
 }

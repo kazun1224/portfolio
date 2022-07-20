@@ -1,14 +1,14 @@
-import type { GetStaticProps, NextPageWithLayout } from "next";
+import type { GetStaticProps, CustomNextPage } from "next";
 import Link from "next/link";
 import { Layout } from "src/Layout/Layout";
 import { client } from "src/libs/client";
 import { Works, PropsList } from "src/types/works";
 
-const Home: NextPageWithLayout<PropsList> = (props) => {
+const Home: CustomNextPage<PropsList> = (props) => {
   return (
     <div>
       <h1 className="text-9xl">Home</h1>
-      
+
 
 
       <h2>Works</h2>
