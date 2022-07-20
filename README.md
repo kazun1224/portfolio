@@ -5,3 +5,6 @@ yarn create next-app --example https://github.com/lightsound/Next.js-TypeScript-
 ```
 
 ## ポートフォリオを作成
+
+Layout参考サイト
+https://zenn.dev/hisho/articles/fe9f4ec4a8e691

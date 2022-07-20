@@ -1,3 +1,5 @@
+// microCMSから取得したデータの型定義
+
 import {
   MicroCMSContentId,
   MicroCMSDate,

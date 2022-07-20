@@ -1,5 +1,6 @@
 import { createClient } from "microcms-js-sdk"; //ES6
 
+//microCMSの初期設定
 // Initialize Client SDK.
 export const client = createClient({
   serviceDomain: process.env.SERVICE_DOMAIN,
