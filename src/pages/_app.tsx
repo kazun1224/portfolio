@@ -1,9 +1,12 @@
 import "src/styles/globals.css";
 import type { CustomAppPage  } from "next/app";
 import { MantineProvider } from "@mantine/core";
+import Head from "next/head";
 
 
-const MyApp: CustomAppPage = ({ Component, pageProps } ) => {
+const MyApp: CustomAppPage = (props) => {
+  const { Component, pageProps } = props;
+
   const getLayout =
   Component.getLayout ||
   ((page) => {
@@ -11,15 +14,23 @@ const MyApp: CustomAppPage = ({ Component, pageProps } ) => {
   });
 
   return (
-    <MantineProvider
-      theme={{
-        // Override any other properties from default theme
-        fontFamily: 'Open Sans, sans serif',
-        spacing: { xs: 15, sm: 20, md: 25, lg: 30, xl: 40 },
-      }}
+    <>
+      <Head>
+        <title>Page title</title>
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+      </Head>
+
+      <MantineProvider
+        withGlobalStyles
+        withNormalizeCSS
+        theme={{
+          /** Put your mantine theme override here */
+          colorScheme: 'light',
+        }}
       >
       {getLayout(<Component {...pageProps} />)}
-    </MantineProvider>
+      </MantineProvider>
+    </>
   );
 }
 
