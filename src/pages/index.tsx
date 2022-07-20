@@ -1,31 +1,33 @@
-import type { GetStaticProps, NextPage } from "next";
+import type { GetStaticProps, NextPageWithLayout } from "next";
 import Link from "next/link";
-import { ComponentProps, useState } from "react";
+import { Layout } from "src/Layout/Layout";
 import { client } from "src/libs/client";
 import { Works, PropsList } from "src/types/works";
-// import {handler} from "./api/search"
 
-const Home: NextPage<PropsList> = (props) => {
-  console.log(props.contents);
-
+const Home: NextPageWithLayout<PropsList> = (props) => {
   return (
     <div>
-      <h1 className="text-9xl">Works</h1>
-      <p>{props.totalCount}</p>
+      <h1 className="text-9xl">Home</h1>
+      
 
-      <ul>
-        {props.contents.map((content) => {
-          return (
-            <li key={content.id}>
-              <h2>
-                <Link href={`/works/${content.id}`}>
-                  <a className="underline">{content.title}</a>
-                </Link>
-              </h2>
-            </li>
-          );
-        })}
-      </ul>
+
+      <h2>Works</h2>
+      <p>{props.totalCount}</p>
+      <article>
+        <ul>
+          {props.contents.map((content) => {
+            return (
+              <li key={content.id}>
+                <h2>
+                  <Link href={`/works/${content.id}`}>
+                    <a className="underline">{content.title}</a>
+                  </Link>
+                </h2>
+              </li>
+            );
+          })}
+        </ul>
+      </article>
     </div>
   );
 };
@@ -35,5 +37,8 @@ export const getStaticProps: GetStaticProps<PropsList> = async () => {
 
   return { props: data };
 };
+
+// Layoutの適用
+Home.getLayout = (page) => <Layout>{page}</Layout>;
 
 export default Home;
