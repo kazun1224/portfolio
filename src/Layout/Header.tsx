@@ -5,7 +5,7 @@ const NAV_ITEMS = [
   { href: "/works", label: "Works" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
-];
+] as const;
 
 export const Header = () => {
   return (
