@@ -8,3 +8,6 @@ yarn create next-app --example https://github.com/lightsound/Next.js-TypeScript-
 
 Layout参考サイト
 https://zenn.dev/hisho/articles/fe9f4ec4a8e691
+
+bg bg-orange-50
+text text-emerald-400
