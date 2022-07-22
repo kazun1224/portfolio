@@ -12,20 +12,20 @@ const Custom404: CustomNextPage = () => {
           <div className="grid gap-8 sm:grid-cols-2">
             {/* content - start */}
             <div className="flex flex-col items-center justify-center sm:items-start md:py-24 lg:py-32">
-              <p className="mb-4 text-sm font-semibold uppercase text-indigo-500 md:text-base">
+              <p className="mb-4 text-sm font-semibold uppercase text-green-600 md:text-base">
                 Error 404
               </p>
-              <h1 className="mb-2 text-center text-2xl font-bold text-gray-800 sm:text-left md:text-3xl">
+              <h1 className="mb-2 text-center text-5xl font-bold text-gray-800 sm:text-left md:text-3xl">
                 Page not found
               </h1>
 
               <p className="mb-8 text-center text-gray-500 sm:text-left md:text-lg">
-                The page you’re looking for doesn’t exist.
+                存在しないページです。
               </p>
 
               <Link href="/">
                 <a className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">
-                  Go home
+                  ホームへ戻る
                 </a>
               </Link>
             </div>
