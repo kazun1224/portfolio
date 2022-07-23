@@ -13,7 +13,7 @@ const Home: CustomNextPage<PropsList> = (props) => {
         {/* <!-- content - start --> */}
         <div className="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
           <p className="mb-4 font-semibold text-green-500 md:mb-5 md:text-3xl xl:text-2xl">
-            I m Kazuya Shinotsuka
+            I m kazu
           </p>
 
           <h1 className="text-black-800 mb-6 text-4xl font-bold sm:text-5xl md:mb-10 md:text-6xl">
