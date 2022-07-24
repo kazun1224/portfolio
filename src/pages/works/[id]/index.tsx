@@ -1,10 +1,11 @@
 import dayjs from "dayjs";
 import { GetListRequest } from "microcms-js-sdk";
-import { GetStaticPaths, GetStaticProps, NextPage } from "next";
+import { CustomNextPage, GetStaticPaths, GetStaticProps } from "next";
+import { Layout } from "src/Layout/Layout";
 import { client } from "src/libs/client";
 import { PropsDetail } from "src/types/works";
 
-const WorksId: NextPage<PropsDetail> = (props) => {
+const WorksId: CustomNextPage<PropsDetail> = (props) => {
   return (
     <main>
       <h2>WorksId</h2>
@@ -43,5 +44,8 @@ export const getStaticProps: GetStaticProps<{}, { id: string }> = async (
     props: data,
   };
 };
+
+WorksId.getLayout = (page) => <Layout>{page}</Layout>;
+
 
 export default WorksId;
