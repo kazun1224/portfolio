@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 const NAV_ITEMS = [
-  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/works", label: "Works" },
   { href: "/contact", label: "Contact" },
@@ -9,7 +8,7 @@ const NAV_ITEMS = [
 
 export const Header = () => {
   return (
-    <header className="mb-8 flex items-center justify-between py-4 md:mb-12 md:py-8 xl:mb-16">
+    <header className=" flex items-center justify-between py-4  md:py-8 ">
       {/* logo - start */}
       <Link href="/">
         <a className="text-black-800 inline-flex items-center gap-2.5 text-2xl font-bold text-green-600 md:text-3xl">

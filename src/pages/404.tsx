@@ -2,7 +2,7 @@ import type { CustomNextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Layout } from "src/Layout/Layout";
-import pic404 from "public/img/ruthson-zimmerman-FVwG5OzPuzo-unsplash (1).jpg";
+import pic404 from "public/img/404.png";
 
 const Custom404: CustomNextPage = () => {
   return (
@@ -10,6 +10,11 @@ const Custom404: CustomNextPage = () => {
       <div className="bg-white py-6 sm:py-8 lg:py-12">
         <div className="mx-auto max-w-screen-lg px-4 md:px-8">
           <div className="grid gap-8 sm:grid-cols-2">
+            {/* image - start */}
+            <div className="relative  overflow-hidden  md:h-auto">
+              <Image src={pic404} alt="404のイラスト" />
+            </div>
+            {/* image - end */}
             {/* content - start */}
             <div className="flex flex-col items-center justify-center sm:items-start md:py-24 lg:py-32">
               <p className="mb-4 text-sm font-semibold uppercase text-green-600 md:text-base">
@@ -31,11 +36,7 @@ const Custom404: CustomNextPage = () => {
             </div>
             {/* content - end */}
 
-            {/* image - start */}
-            <div className="relative h-80 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-auto">
-              <Image src={pic404} alt="Picture of the author" />
-            </div>
-            {/* image - end */}
+
           </div>
         </div>
       </div>

@@ -30,12 +30,14 @@ const Works: CustomNextPage<PropsList> = (props) => {
                 <Link href={`/works/${content.id}`}>
                   <a className="flex flex-col overflow-hidden rounded-lg border bg-white">
                     <div className="group relative block h-48 overflow-hidden bg-gray-100 md:h-64">
-                      {/* <Image
+                      <Image
                         src={content.img.url}
+                        layout='fill'
                         loading="lazy"
                         alt="Photo by Minh Pham"
                         className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                      /> */}
+                        unoptimized={true}
+                      />
                     </div>
 
                     <div className="flex flex-1 flex-col p-4 sm:p-6">

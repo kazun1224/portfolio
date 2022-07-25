@@ -133,11 +133,13 @@ const Home: CustomNextPage<PropsList> = (props) => {
                         className="flex flex-col items-center gap-4 font-semibold transition  duration-100 hover:text-green-600 active:text-green-700 md:flex-row lg:gap-6"
                       >
                         <div className="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
-                          {/* <Image
-                  src={content.img.url}
-                  alt="Photo by Minh Pham"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                /> */}
+                          <Image
+                            src={content.img.url}
+                            alt="Photo by Minh Pham"
+                            layout="fill"
+                            className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                            unoptimized={true}
+                          />
                         </div>
 
                         <div className="flex flex-col gap-2">

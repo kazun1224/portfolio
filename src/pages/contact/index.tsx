@@ -9,13 +9,10 @@ const Contact: CustomNextPage = () => {
           {/* <!-- text - start --> */}
           <div className="mb-10 md:mb-16">
             <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
-              Get in touch
+              Contact
             </h2>
-
             <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
-              This is a section of some simple filler text, also known as
-              placeholder text. It shares some characteristics of a real written
-              text but is random or otherwise generated.
+              お気軽にお問い合わせください。
             </p>
           </div>
           {/* <!-- text - end --> */}
@@ -27,7 +24,7 @@ const Contact: CustomNextPage = () => {
                 htmlFor="first-name"
                 className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
               >
-                First name*
+                姓*
               </label>
               <input
                 name="first-name"
@@ -40,7 +37,7 @@ const Contact: CustomNextPage = () => {
                 htmlFor="last-name"
                 className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
               >
-                Last name*
+                名*
               </label>
               <input
                 name="last-name"
@@ -53,7 +50,7 @@ const Contact: CustomNextPage = () => {
                 htmlFor="company"
                 className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
               >
-                Company
+                会社
               </label>
               <input
                 name="company"
@@ -66,7 +63,7 @@ const Contact: CustomNextPage = () => {
                 htmlFor="email"
                 className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
               >
-                Email*
+                メールアドレス*
               </label>
               <input
                 name="email"
@@ -79,7 +76,7 @@ const Contact: CustomNextPage = () => {
                 htmlFor="subject"
                 className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
               >
-                Subject*
+                件名*
               </label>
               <input
                 name="subject"
@@ -92,7 +89,7 @@ const Contact: CustomNextPage = () => {
                 htmlFor="message"
                 className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
               >
-                Message*
+                内容*
               </label>
               <textarea
                 name="message"
@@ -102,7 +99,7 @@ const Contact: CustomNextPage = () => {
 
             <div className="flex items-center justify-between sm:col-span-2">
               <button className="inline-block rounded-lg bg-green-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-green-300 transition duration-100 hover:bg-green-600 focus-visible:ring active:bg-green-700 md:text-base">
-                Send
+                送信
               </button>
 
               <span className="text-sm text-gray-500">*Required</span>

@@ -1,5 +1,8 @@
 import type { CustomNextPage } from "next";
 import { Layout } from "src/Layout/Layout";
+import aboutDetail from "public/img/aboutDetail.png";
+import Image from "next/image";
+
 
 const About: CustomNextPage = () => {
   return (
@@ -9,7 +12,11 @@ const About: CustomNextPage = () => {
           <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
             <div>
               <div className="h-64 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-auto">
-                {/* <img src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=600&h=750" loading="lazy" alt="Photo by Martin Sanchez" className="w-full h-full object-cover object-center" /> */}
+              <Image
+            src={aboutDetail}
+            alt="メインビジュアルの画像"
+            className="h-full w-full"
+          />
               </div>
             </div>
 
