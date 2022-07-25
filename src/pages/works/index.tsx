@@ -7,7 +7,7 @@ import { Layout } from "src/Layout/Layout";
 
 const Works: CustomNextPage<PropsList> = (props) => {
   return (
-    <div className="bg-white py-6 sm:py-8 lg:py-12">
+
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         {/* <!-- text - start --> */}
         <div className="mb-10 md:mb-16">
@@ -56,7 +56,7 @@ const Works: CustomNextPage<PropsList> = (props) => {
           })}
         </div>
       </div>
-    </div>
+ 
 
     // <div>
     //   <h1 className="text-9xl">Works</h1>

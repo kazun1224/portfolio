@@ -10,9 +10,9 @@ import about from "public/img/about.png";
 const Home: CustomNextPage<PropsList> = (props) => {
   return (
     <div>
-      <section className="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
+      <section className="flex-col-reverse flex justify-between gap-20 md:gap-16 md:flex-row  text-center pb-20 md:pb-32">
         {/* <!-- content - start --> */}
-        <div className="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
+        <div className="flex flex-col justify-center md:text-left lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
           <p className="mb-4 font-semibold text-green-500 md:mb-5 md:text-3xl xl:text-2xl">
             My Portfolio
           </p>
@@ -21,7 +21,7 @@ const Home: CustomNextPage<PropsList> = (props) => {
             Web Developer
           </h1>
 
-          <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
+          <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center md:justify-start">
             <Link href="/works">
               <a className="inline-block rounded-lg bg-green-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-green-300 transition duration-100 hover:bg-green-600 focus-visible:ring active:bg-green-700 md:text-base">
                 Go Works
@@ -43,69 +43,66 @@ const Home: CustomNextPage<PropsList> = (props) => {
       </section>
       {/* <!-------------------------------- section ---------------------------------------> */}
 
-      <div className="bg-white py-6 sm:py-8 lg:py-12">
-        <div className="mx-auto max-w-screen-xl px-4 md:px-8">
-          <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
-            <div>
-              <div className="h-64 overflow-hidden md:h-auto">
-                <Image
-                  src={about}
-                  alt="aboutのイラスト"
-                  className="h-full w-full object-cover object-center"
-                />
-              </div>
-            </div>
+      <section className="pb-20 md:pb-32 px-4 md:px-8">
+        <div className="grid place-items-center gap-8 md:grid-cols-2 lg:gap-12">
+          <div className="overflow-hidden md:h-auto">
+            <Image
+              src={about}
+              alt="aboutのイラスト"
+              className="h-full w-full object-cover object-center"
+            />
+          </div>
 
-            <div className="md:pt-8">
-              <p className="text-center font-bold text-green-500 md:text-left">
-                Who we are
-              </p>
+          <div className="md:pt-8">
+            <p className="text-center font-bold text-green-500 md:text-left">
+              Who we are
+            </p>
 
-              <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left">
-                Our competitive advantage
-              </h1>
+            <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left">
+              Our competitive advantage
+            </h1>
 
-              <p className="mb-6 text-gray-500 sm:text-lg md:mb-8">
-                This is a section of some simple filler text, also known as
-                placeholder text. It shares some characteristics of a real
-                written text but is random or otherwise generated. It may be
-                used to display a sample of fonts or generate text for testing.
-                Filler text is dummy text which has no meaning however looks
-                very similar to real text.
-                <br />
-                <br />
-                This is a section of some simple filler text, also known as
-                placeholder text. It shares some characteristics of a real
-                written text but is{" "}
-                <a
-                  href="#"
-                  className="text-green-500 underline transition duration-100 hover:text-green-600 active:text-green-700"
-                >
-                  random
-                </a>{" "}
-                or otherwise generated. It may be used to display a sample of
-                fonts or generate text for testing. Filler text is dummy text
-                which has no meaning however looks very similar to real text.
-              </p>
+            <p className="mb-6 text-gray-500 sm:text-lg md:mb-8">
+              This is a section of some simple filler text, also known as
+              placeholder text. It shares some characteristics of a real written
+              text but is random or otherwise generated. It may be used to
+              display a sample of fonts or generate text for testing. Filler
+              text is dummy text which has no meaning however looks very similar
+              to real text.
+              <br />
+              <br />
+              This is a section of some simple filler text, also known as
+              placeholder text. It shares some characteristics of a real written
+              text but is{" "}
+              <a
+                href="#"
+                className="text-green-500 underline transition duration-100 hover:text-green-600 active:text-green-700"
+              >
+                random
+              </a>{" "}
+              or otherwise generated. It may be used to display a sample of
+              fonts or generate text for testing. Filler text is dummy text
+              which has no meaning however looks very similar to real text.
+            </p>
 
-              <h2 className="mb-2 text-center text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4 md:text-left">
-                About us
-              </h2>
+            <h2 className="mb-2 text-center text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4 md:text-left">
+              About us
+            </h2>
 
-              <p className="mb-6 text-gray-500 sm:text-lg md:mb-8">
-                This is a section of some simple filler text, also known as
-                placeholder text. It shares some characteristics of a real
-                written text but is random or otherwise generated. It may be
-                used to display a sample of fonts or generate text for testing.
-                Filler text is dummy text which has no meaning however looks
-                very similar to real text.
-              </p>
-            </div>
+            <p className="mb-6 text-gray-500 sm:text-lg md:mb-8">
+              This is a section of some simple filler text, also known as
+              placeholder text. It shares some characteristics of a real written
+              text but is random or otherwise generated. It may be used to
+              display a sample of fonts or generate text for testing. Filler
+              text is dummy text which has no meaning however looks very similar
+              to real text.
+            </p>
           </div>
         </div>
-      </div>
+      </section>
+
       {/* <!-------------------------------- section ---------------------------------------> */}
-      <div className="bg-white py-6 sm:py-8 lg:py-12">
+      <div className="pb-20 md:pb-32">
         <div className="mx-auto max-w-screen-xl px-4 md:px-8">
           {/* <!-- text - start --> */}
           <div className="mb-10 md:mb-16">
@@ -165,7 +162,7 @@ const Home: CustomNextPage<PropsList> = (props) => {
         </div>
       </div>
       {/* <!-------------------------------- section ---------------------------------------> */}
-      <div className="bg-white py-6 sm:py-8 lg:py-12">
+      <div className="pb-20 md:pb-32">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="flex flex-col items-center justify-between gap-4 rounded-lg bg-gray-100 p-4 sm:flex-row md:p-8">
             <div>
