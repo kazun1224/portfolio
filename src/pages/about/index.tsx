@@ -14,7 +14,7 @@ const About: CustomNextPage = () => {
             </div>
 
             <div className="md:pt-8">
-              <p className="text-center font-bold text-indigo-500 md:text-left">
+              <p className="text-center font-bold text-green-500 md:text-left">
                 Who we are
               </p>
 
@@ -36,7 +36,7 @@ const About: CustomNextPage = () => {
                 written text but is{" "}
                 <a
                   href="#"
-                  className="text-indigo-500 underline transition duration-100 hover:text-indigo-600 active:text-indigo-700"
+                  className="text-green-500 underline transition duration-100 hover:text-green-600 active:text-green-700"
                 >
                   random
                 </a>{" "}

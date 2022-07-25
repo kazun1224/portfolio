@@ -23,8 +23,8 @@ const Home: CustomNextPage<PropsList> = (props) => {
 
           <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
             <Link href="/works">
-              <a className="inline-block rounded-lg bg-green-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-green-600 focus-visible:ring active:bg-green-700 md:text-base">
-                Go to Works
+              <a className="inline-block rounded-lg bg-green-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-green-300 transition duration-100 hover:bg-green-600 focus-visible:ring active:bg-green-700 md:text-base">
+                Go Works
               </a>
             </Link>
           </div>
@@ -79,7 +79,7 @@ const Home: CustomNextPage<PropsList> = (props) => {
                 written text but is{" "}
                 <a
                   href="#"
-                  className="text-indigo-500 underline transition duration-100 hover:text-indigo-600 active:text-indigo-700"
+                  className="text-green-500 underline transition duration-100 hover:text-green-600 active:text-green-700"
                 >
                   random
                 </a>{" "}
@@ -130,7 +130,7 @@ const Home: CustomNextPage<PropsList> = (props) => {
                     <Link href={`/works/${content.id}`}>
                       <a
                         key={content.id}
-                        className="flex flex-col items-center gap-4 font-semibold transition  duration-100 hover:text-indigo-600 active:text-indigo-700 md:flex-row lg:gap-6"
+                        className="flex flex-col items-center gap-4 font-semibold transition  duration-100 hover:text-green-600 active:text-green-700 md:flex-row lg:gap-6"
                       >
                         <div className="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
                           {/* <Image
@@ -153,11 +153,13 @@ const Home: CustomNextPage<PropsList> = (props) => {
               );
             })}
           </div>
-          <Link href="/works">
-            <a className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">
-              Go home
-            </a>
-          </Link>
+          <div className=" flex flex-col items-center py-6 sm:py-8 lg:py-12">
+            <Link href="/works">
+              <a className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-green-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">
+                Go Works
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
       {/* <!-------------------------------- section ---------------------------------------> */}
@@ -171,7 +173,7 @@ const Home: CustomNextPage<PropsList> = (props) => {
               <p className="text-gray-600">No Credit Card required</p>
             </div>
             <Link href="/contact">
-              <a className="inline-block rounded-lg bg-green-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-green-600 focus-visible:ring active:bg-green-700 md:text-base">
+              <a className="inline-block rounded-lg bg-green-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-green-300 transition duration-100 hover:bg-green-600 focus-visible:ring active:bg-green-700 md:text-base">
                 Start now
               </a>
             </Link>

@@ -31,7 +31,7 @@ const Contact: CustomNextPage = () => {
               </label>
               <input
                 name="first-name"
-                className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
+                className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-green-300 transition duration-100 focus:ring"
               />
             </div>
 
@@ -44,7 +44,7 @@ const Contact: CustomNextPage = () => {
               </label>
               <input
                 name="last-name"
-                className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
+                className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-green-300 transition duration-100 focus:ring"
               />
             </div>
 
@@ -57,7 +57,7 @@ const Contact: CustomNextPage = () => {
               </label>
               <input
                 name="company"
-                className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
+                className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-green-300 transition duration-100 focus:ring"
               />
             </div>
 
@@ -70,7 +70,7 @@ const Contact: CustomNextPage = () => {
               </label>
               <input
                 name="email"
-                className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
+                className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-green-300 transition duration-100 focus:ring"
               />
             </div>
 
@@ -83,7 +83,7 @@ const Contact: CustomNextPage = () => {
               </label>
               <input
                 name="subject"
-                className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
+                className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-green-300 transition duration-100 focus:ring"
               />
             </div>
 
@@ -96,12 +96,12 @@ const Contact: CustomNextPage = () => {
               </label>
               <textarea
                 name="message"
-                className="h-64 w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
+                className="h-64 w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-green-300 transition duration-100 focus:ring"
               ></textarea>
             </div>
 
             <div className="flex items-center justify-between sm:col-span-2">
-              <button className="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">
+              <button className="inline-block rounded-lg bg-green-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-green-300 transition duration-100 hover:bg-green-600 focus-visible:ring active:bg-green-700 md:text-base">
                 Send
               </button>
 
@@ -112,7 +112,7 @@ const Contact: CustomNextPage = () => {
               By signing up to our newsletter you agree to our{" "}
               <a
                 href="#"
-                className="underline transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                className="underline transition duration-100 hover:text-green-500 active:text-green-600"
               >
                 Privacy Policy
               </a>
