@@ -11,7 +11,7 @@ export const Footer = () => {
   return (
     <footer className="mx-auto max-w-screen-2xl">
       <div className="flex flex-col items-center justify-between gap-4 border-t border-b py-6 md:flex-row">
-        {/* <!-- nav - start --> */}
+        {/*  nav - start  */}
         <nav className="flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
           {NAV_ITEMS.map((item) => {
             return (
@@ -23,9 +23,9 @@ export const Footer = () => {
             );
           })}
         </nav>
-        {/* <!-- nav - end --> */}
+        {/*  nav - end  */}
 
-        {/* <!-- social - start --> */}
+        {/*  social - start  */}
         <div className="flex gap-4">
           <Link href="#">
             <a
@@ -64,7 +64,7 @@ export const Footer = () => {
             </a>
           </Link>
         </div>
-        {/* <!-- social - end --> */}
+        {/*  social - end  */}
       </div>
 
       <div className="py-8 text-center text-sm text-gray-400">

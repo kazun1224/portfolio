@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const About: CustomNextPage = () => {
   return (
-    <div className="mx-auto max-w-screen-xl px-4 md:px-8">
+    <div className="mx-auto max-w-screen-xl md:px-8">
       <div className="grid place-items-center gap-8 md:grid-cols-2 lg:gap-12">
         <div>
           <div className="overflow-hidden md:h-auto">
@@ -23,29 +23,17 @@ const About: CustomNextPage = () => {
           </p>
 
           <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left">
-            Our competitive advantage
+            なにをつくるかよりも、なぜ作るか
           </h1>
 
           <p className="mb-6 text-gray-500 sm:text-lg md:mb-8">
-            This is a section of some simple filler text, also known as
-            placeholder text. It shares some characteristics of a real written
-            text but is random or otherwise generated. It may be used to display
-            a sample of fonts or generate text for testing. Filler text is dummy
-            text which has no meaning however looks very similar to real text.
+            大手家電メーカー勤務後、 個人事業主として外交販売員として活動
             <br />
+            不動産の営業や製造業、個人事業主としてWeb制作の請負など様々な経験をしてきました。
             <br />
-            This is a section of some simple filler text, also known as
-            placeholder text. It shares some characteristics of a real written
-            text but is{" "}
-            <a
-              href="#"
-              className="text-green-500 underline transition duration-100 hover:text-green-600 active:text-green-700"
-            >
-              random
-            </a>{" "}
-            or otherwise generated. It may be used to display a sample of fonts
-            or generate text for testing. Filler text is dummy text which has no
-            meaning however looks very similar to real text.
+            個人事業主の経験を活かして経営者の目線など、達観した視点で、
+            <br />
+            「なぜ作るか」を念頭に置いて制作を行います。
           </p>
 
           <h2 className="mb-2 text-center text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4 md:text-left">
@@ -53,11 +41,7 @@ const About: CustomNextPage = () => {
           </h2>
 
           <p className="mb-6 text-gray-500 sm:text-lg md:mb-8">
-            This is a section of some simple filler text, also known as
-            placeholder text. It shares some characteristics of a real written
-            text but is random or otherwise generated. It may be used to display
-            a sample of fonts or generate text for testing. Filler text is dummy
-            text which has no meaning however looks very similar to real text.
+            ・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・
           </p>
         </div>
       </div>

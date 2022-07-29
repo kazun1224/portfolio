@@ -12,7 +12,7 @@ const WorksId: CustomNextPage<PropsDetail> = (props) => {
       <h1>{props.title}</h1>
       <time>{dayjs(props.createdAt).format("YYYY年MM月DD日")}</time>
       <div
-      className="prose"
+        className="prose"
         dangerouslySetInnerHTML={{
           __html: `${props.body}`,
         }}

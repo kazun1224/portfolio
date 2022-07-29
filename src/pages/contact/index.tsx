@@ -4,7 +4,7 @@ import { Layout } from "src/Layout/Layout";
 const Contact: CustomNextPage = () => {
   return (
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-      {/* <!-- text - start --> */}
+      {/*  text - start  */}
       <div className="mb-10 md:mb-16">
         <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
           Contact
@@ -13,9 +13,9 @@ const Contact: CustomNextPage = () => {
           お気軽にお問い合わせください。
         </p>
       </div>
-      {/* <!-- text - end --> */}
+      {/*  text - end  */}
 
-      {/* <!-- form - start --> */}
+      {/*  form - start  */}
       <form className="mx-auto grid max-w-screen-md gap-4 sm:grid-cols-2">
         <div>
           <label
@@ -114,7 +114,7 @@ const Contact: CustomNextPage = () => {
           .
         </p>
       </form>
-      {/* <!-- form - end --> */}
+      {/*  form - end  */}
     </div>
   );
 };

@@ -10,7 +10,7 @@ import about from "public/img/about.png";
 const Home: CustomNextPage<PropsList> = (props) => {
   return (
     <div>
-      <section className="flex-col-reverse flex justify-between gap-20 md:gap-16 md:flex-row  text-center pb-20 md:pb-32">
+      <section className="flex flex-col-reverse justify-between gap-20 pb-20 text-center  md:flex-row md:gap-16 md:pb-32">
         {/* <!-- content - start --> */}
         <div className="flex flex-col justify-center md:text-left lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
           <p className="mb-4 font-semibold text-green-500 md:mb-5 md:text-3xl xl:text-2xl">
@@ -43,7 +43,7 @@ const Home: CustomNextPage<PropsList> = (props) => {
       </section>
       {/* <!-------------------------------- section ---------------------------------------> */}
 
-      <section className="pb-20 md:pb-32 px-4 md:px-8">
+      <section className="px-4 pb-20 md:px-8 md:pb-32">
         <div className="grid place-items-center gap-8 md:grid-cols-2 lg:gap-12">
           <div className="overflow-hidden md:h-auto">
             <Image
@@ -58,44 +58,18 @@ const Home: CustomNextPage<PropsList> = (props) => {
               Who we are
             </p>
 
-            <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left">
-              Our competitive advantage
-            </h1>
-
-            <p className="mb-6 text-gray-500 sm:text-lg md:mb-8">
-              This is a section of some simple filler text, also known as
-              placeholder text. It shares some characteristics of a real written
-              text but is random or otherwise generated. It may be used to
-              display a sample of fonts or generate text for testing. Filler
-              text is dummy text which has no meaning however looks very similar
-              to real text.
-              <br />
-              <br />
-              This is a section of some simple filler text, also known as
-              placeholder text. It shares some characteristics of a real written
-              text but is{" "}
-              <a
-                href="#"
-                className="text-green-500 underline transition duration-100 hover:text-green-600 active:text-green-700"
-              >
-                random
-              </a>{" "}
-              or otherwise generated. It may be used to display a sample of
-              fonts or generate text for testing. Filler text is dummy text
-              which has no meaning however looks very similar to real text.
-            </p>
-
-            <h2 className="mb-2 text-center text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4 md:text-left">
+            <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left">
               About us
             </h2>
 
             <p className="mb-6 text-gray-500 sm:text-lg md:mb-8">
-              This is a section of some simple filler text, also known as
-              placeholder text. It shares some characteristics of a real written
-              text but is random or otherwise generated. It may be used to
-              display a sample of fonts or generate text for testing. Filler
-              text is dummy text which has no meaning however looks very similar
-              to real text.
+              大手家電メーカー勤務後、 個人事業主として外交販売員として活動
+              <br />
+              不動産の営業や製造業、個人事業主としてWeb制作の請負など様々な経験をしてきました。
+              <br />
+              個人事業主の経験を活かして経営者の目線など、達観した視点で、
+              <br />
+              「なぜ作るか」を念頭に置いて制作を行います。
             </p>
           </div>
         </div>
@@ -154,7 +128,7 @@ const Home: CustomNextPage<PropsList> = (props) => {
           </div>
           <div className=" flex flex-col items-center py-6 sm:py-8 lg:py-12">
             <Link href="/works">
-              <a className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-green-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">
+              <a className="inline-block rounded-lg bg-green-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-green-300 transition duration-100 hover:bg-green-600 focus-visible:ring active:bg-green-700 md:text-base">
                 Go Works
               </a>
             </Link>
@@ -169,11 +143,11 @@ const Home: CustomNextPage<PropsList> = (props) => {
               <h2 className="text-xl font-bold text-green-500 md:text-2xl">
                 Contact
               </h2>
-              <p className="text-gray-600">No Credit Card required</p>
+              <p className="text-gray-600">お問い合わせはこちら</p>
             </div>
             <Link href="/contact">
               <a className="inline-block rounded-lg bg-green-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-green-300 transition duration-100 hover:bg-green-600 focus-visible:ring active:bg-green-700 md:text-base">
-                Start now
+                Go Contact
               </a>
             </Link>
           </div>
