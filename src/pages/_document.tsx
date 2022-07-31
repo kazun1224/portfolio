@@ -16,7 +16,7 @@ class MyDocument extends Document {
     return (
       <Html lang="ja">
         <Head />
-        <body>
+        <body className="my-0 mx-auto h-screen w-full max-w-screen-xl px-5 lg:px-20">
           <Main />
           <NextScript />
         </body>

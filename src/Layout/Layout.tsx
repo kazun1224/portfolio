@@ -10,11 +10,9 @@ export const Layout: CustomLayout = (props) => {
         <title>Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="my-0 mx-auto h-screen w-full max-w-screen-xl px-5 lg:px-20 ">
-        <Header />
-        <main className="py-20 md:py-32">{props.children}</main>
-        <Footer />
-      </div>
+      <Header />
+      <main className="py-20 md:py-32">{props.children}</main>
+      <Footer />
     </>
   );
 };
