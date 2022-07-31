@@ -8,8 +8,8 @@ import { NextRouter, useRouter } from "next/router";
 export const Header = () => {
   const router: NextRouter = useRouter();
 
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleDrawer = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const toggleDrawer: () => void = () => {
     setIsOpen((prevState) => !prevState);
   };
   return (

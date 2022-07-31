@@ -6,9 +6,10 @@ import { client } from "src/libs/client";
 import { Works, PropsList } from "src/types/works";
 import minePic from "public/img/main.png";
 import about from "public/img/about.png";
+import { MicroCMSContentId, MicroCMSDate } from "microcms-js-sdk";
 
 const Home: CustomNextPage<PropsList> = (props) => {
-  const HomeWorkContents = props.contents.slice(-4);
+  const HomeWorkContents: (Works & MicroCMSContentId & MicroCMSDate)[] = props.contents.slice(-4);
 
   return (
     <div>
