@@ -1,11 +1,5 @@
 import Link from "next/link";
-
-const NAV_ITEMS = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/works", label: "Works" },
-  { href: "/contact", label: "Contact" },
-] as const;
+import { NAV_ITEMS } from "src/utils/nav";
 
 export const Footer = () => {
   return (
