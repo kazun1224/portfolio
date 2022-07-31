@@ -19,11 +19,11 @@ const Home: CustomNextPage<PropsList> = (props) => {
             My Portfolio
           </p>
 
-          <h1 className="text-black-800 mb-6 text-4xl font-bold sm:text-5xl md:mb-10 md:text-6xl">
+          <h1 className="text-black-800 mb-10 text-4xl font-bold sm:text-5xl md:text-6xl">
             Web Developer
           </h1>
 
-          <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center md:justify-start">
+          <div className="flex flex-col gap-2.5 sm:justify-center md:flex-row md:justify-start">
             <Link href="/works">
               <a className="inline-block rounded-lg bg-green-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-green-300 transition duration-100 hover:bg-green-600 focus-visible:ring active:bg-green-700 md:text-base">
                 Go Works
@@ -92,7 +92,7 @@ const Home: CustomNextPage<PropsList> = (props) => {
           </div>
           {/* <!-- text - end --> */}
 
-          <div className="grid gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-2 xl:grid-cols-2 xl:gap-16">
+          <div className="mb-10 grid gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-2 xl:grid-cols-2 xl:gap-16">
             {/* <!-- article - start --> */}
 
             {/* <!-- article - end --> */}
@@ -128,7 +128,7 @@ const Home: CustomNextPage<PropsList> = (props) => {
               );
             })}
           </div>
-          <div className=" flex flex-col items-center py-6 sm:py-8 lg:py-12">
+          <div className="flex flex-col gap-2.5 sm:justify-center md:flex-row ">
             <Link href="/works">
               <a className="inline-block rounded-lg bg-green-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-green-300 transition duration-100 hover:bg-green-600 focus-visible:ring active:bg-green-700 md:text-base">
                 Go Works
@@ -140,15 +140,15 @@ const Home: CustomNextPage<PropsList> = (props) => {
       {/* <!-------------------------------- section ---------------------------------------> */}
       <div className="pb-20 md:pb-32">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <div className="flex flex-col items-center justify-between gap-4 rounded-lg bg-gray-100 p-4 sm:flex-row md:p-8">
+          <div className=" flex flex-col items-center justify-between gap-10 rounded-lg bg-gray-100 py-9 px-6 text-center sm:flex-row sm:gap-4 sm:p-4 sm:text-left md:p-8">
             <div>
-              <h2 className="text-xl font-bold text-green-500 md:text-2xl">
+              <h2 className="mb-4 text-xl font-bold text-green-500 sm:mb-0 md:text-2xl">
                 Contact
               </h2>
               <p className="text-gray-600">お問い合わせはこちら</p>
             </div>
             <Link href="/contact">
-              <a className="inline-block rounded-lg bg-green-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-green-300 transition duration-100 hover:bg-green-600 focus-visible:ring active:bg-green-700 md:text-base">
+              <a className=" inline-block w-full rounded-lg bg-green-500 py-3 text-center text-sm font-semibold text-white outline-none ring-green-300 transition duration-100 hover:bg-green-600 focus-visible:ring active:bg-green-700 sm:w-fit sm:px-8 md:text-base ">
                 Go Contact
               </a>
             </Link>
