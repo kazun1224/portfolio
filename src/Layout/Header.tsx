@@ -73,9 +73,9 @@ export const Header = () => {
             return (
               <Link key={item.href} href={item.href}>
                 <a
-                  className={`py-6 block text-lg border-gray-600 font-semibold  transition duration-100 hover:text-green-500 ${
+                  className={`block border-gray-600 py-6 text-lg font-semibold  transition duration-100 hover:text-green-500 ${
                     router.pathname === item.href
-                      ? "bg-green-500 text-white rounded-md"
+                      ? "rounded-md bg-green-500 text-white"
                       : "text-gray-600"
                   }`}
                   onClick={toggleDrawer}
