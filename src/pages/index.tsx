@@ -8,6 +8,8 @@ import minePic from "public/img/main.png";
 import about from "public/img/about.png";
 
 const Home: CustomNextPage<PropsList> = (props) => {
+  const HomeWorkContents = props.contents.slice(-4);
+
   return (
     <div>
       <section className="flex flex-col-reverse justify-between gap-20 pb-20 text-center  md:flex-row md:gap-16 md:pb-32">
@@ -94,7 +96,7 @@ const Home: CustomNextPage<PropsList> = (props) => {
             {/* <!-- article - start --> */}
 
             {/* <!-- article - end --> */}
-            {props.contents.map((content) => {
+            {HomeWorkContents.map((content) => {
               return (
                 <div key={content.id}>
                   <h2>
