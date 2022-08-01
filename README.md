@@ -15,6 +15,9 @@ https://github.com/qin-salon/admin-dashboard-with-next-mantine/blob/main/src/typ
 ページ遷移待機中のローディング表示の参考サイト
 https://deecode.net/?p=1891
 
+イラスト #86efac
+https://undraw.co/illustrations
+
 
 
 bg bg-orange-50
