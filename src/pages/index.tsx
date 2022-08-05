@@ -9,7 +9,8 @@ import about from "public/img/about.png";
 import { MicroCMSContentId, MicroCMSDate } from "microcms-js-sdk";
 
 const Home: CustomNextPage<PropsList> = (props) => {
-  const HomeWorkContents: (Works & MicroCMSContentId & MicroCMSDate)[] = props.contents.slice(-4);
+  const HomeWorkContents: (Works & MicroCMSContentId & MicroCMSDate)[] =
+    props.contents.slice(0, 4);
 
   return (
     <div>
@@ -38,7 +39,7 @@ const Home: CustomNextPage<PropsList> = (props) => {
         <div className="overflow-hidden  xl:w-5/12">
           <Image
             src={minePic}
-            alt="メインビジュアルの画像"
+            alt="メインビジュアル"
             className="h-full w-full"
           />
         </div>
@@ -51,7 +52,7 @@ const Home: CustomNextPage<PropsList> = (props) => {
           <div className="overflow-hidden md:h-auto">
             <Image
               src={about}
-              alt="aboutのイラスト"
+              alt="About"
               className="h-full w-full object-cover object-center"
             />
           </div>
@@ -109,10 +110,9 @@ const Home: CustomNextPage<PropsList> = (props) => {
                         <div className="group relative block h-56 w-full shrink-0 self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
                           <Image
                             src={content.img.url}
-                            alt="Photo by Minh Pham"
+                            alt="アプリケーションの画像"
                             layout="fill"
-                            className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                            unoptimized={true}
+                            className="object-cover transition duration-200 group-hover:scale-110"
                           />
                         </div>
 

@@ -10,7 +10,7 @@ const Custom404: CustomNextPage = () => {
       <div className="grid place-items-center gap-8 md:grid-cols-2">
         {/* image - start */}
         <div className="relative  overflow-hidden  md:h-auto">
-          <Image src={pic404} alt="404のイラスト" />
+          <Image src={pic404} alt="404" />
         </div>
         {/* image - end */}
         {/* content - start */}

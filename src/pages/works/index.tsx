@@ -31,9 +31,9 @@ const Works: CustomNextPage<PropsList> = (props) => {
                       src={content.img.url}
                       layout="fill"
                       loading="lazy"
-                      alt="Photo by Minh Pham"
-                      className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                      unoptimized={true}
+                      alt="アプリケーションの画像"
+                      className=" object-cover transition duration-200 group-hover:scale-110"
+                      // unoptimized={true}
                     />
                   </div>
 

@@ -1,23 +1,33 @@
 import dayjs from "dayjs";
 import { GetListRequest } from "microcms-js-sdk";
 import { CustomNextPage, GetStaticPaths, GetStaticProps } from "next";
-import { Layout } from "src/Layout/Layout";
+import Image from "next/image";
+import { SingleLayout } from "src/Layout/SingleLayout";
 import { client } from "src/libs/client";
 import { PropsDetail } from "src/types/works";
 
 const WorksId: CustomNextPage<PropsDetail> = (props) => {
   return (
-    <main>
-      <h2>WorksId</h2>
-      <h1>{props.title}</h1>
+    <>
+      <div className="pb-20">
+        <div className="relative pt-18rem md:pt-36rem lg:pt-50rem">
+          <Image
+            src={props.img.url}
+            layout="fill"
+            loading="lazy"
+            alt="アプリケーションの画像"
+            className=" object-cover"
+          />
+        </div>
+        <div
+          className="prose pt-10 md:pt-20"
+          dangerouslySetInnerHTML={{
+            __html: `${props.body}`,
+          }}
+        />
+      </div>
       <time>{dayjs(props.createdAt).format("YYYY年MM月DD日")}</time>
-      <div
-        className="prose"
-        dangerouslySetInnerHTML={{
-          __html: `${props.body}`,
-        }}
-      />
-    </main>
+    </>
   );
 };
 
@@ -46,6 +56,6 @@ export const getStaticProps: GetStaticProps<{}, { id: string }> = async (
   };
 };
 
-WorksId.getLayout = (page) => <Layout>{page}</Layout>;
+WorksId.getLayout = (page) => <SingleLayout>{page}</SingleLayout>;
 
 export default WorksId;
