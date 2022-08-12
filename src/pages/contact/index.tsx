@@ -102,17 +102,6 @@ const Contact: CustomNextPage = () => {
 
           <span className="text-sm text-gray-500">*Required</span>
         </div>
-
-        <p className="text-xs text-gray-400">
-          By signing up to our newsletter you agree to our{" "}
-          <a
-            href="#"
-            className="underline transition duration-100 hover:text-green-500 active:text-green-600"
-          >
-            Privacy Policy
-          </a>
-          .
-        </p>
       </form>
       {/*  form - end  */}
     </div>
