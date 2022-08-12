@@ -4,6 +4,7 @@ import Image from "next/image";
 import { client } from "src/libs/client";
 import { Works, PropsList } from "src/types/works";
 import { Layout } from "src/Layout";
+import { excerpt } from "src/utils/excerpt";
 
 const Works: CustomNextPage<PropsList> = (props) => {
   return (
@@ -37,12 +38,14 @@ const Works: CustomNextPage<PropsList> = (props) => {
                     />
                   </div>
 
-                  <div className="flex flex-1 flex-col p-4 sm:p-6">
+                  <div className="flex flex-1 flex-col p-4">
                     <h2 className="mb-2 text-lg font-semibold text-gray-800">
-                      {content.title}
+                      {content.title.slice(0, 15)}
                     </h2>
 
-                    <p className="mb-8 text-gray-500">{content.description}</p>
+                    <p className=" text-gray-500">
+                      {excerpt(content.description, 16)}
+                    </p>
                   </div>
                 </a>
               </Link>
