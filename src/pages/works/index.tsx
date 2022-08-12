@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { client } from "src/libs/client";
 import { Works, PropsList } from "src/types/works";
-import { Layout } from "src/Layout/Layout";
+import { Layout } from "src/Layout";
 
 const Works: CustomNextPage<PropsList> = (props) => {
   return (

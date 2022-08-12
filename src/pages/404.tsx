@@ -1,8 +1,8 @@
 import type { CustomNextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Layout } from "src/Layout/Layout";
 import pic404 from "public/img/404.png";
+import { Layout } from "src/Layout";
 
 const Custom404: CustomNextPage = () => {
   return (

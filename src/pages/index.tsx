@@ -1,12 +1,12 @@
 import type { GetStaticProps, CustomNextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Layout } from "src/Layout/Layout";
 import { client } from "src/libs/client";
 import { Works, PropsList } from "src/types/works";
 import minePic from "public/img/main.png";
 import about from "public/img/about.png";
 import { MicroCMSContentId, MicroCMSDate } from "microcms-js-sdk";
+import { Layout } from "src/Layout";
 
 const Home: CustomNextPage<PropsList> = (props) => {
   const HomeWorkContents: (Works & MicroCMSContentId & MicroCMSDate)[] =

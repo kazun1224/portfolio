@@ -1,7 +1,7 @@
 import type { CustomNextPage } from "next";
-import { Layout } from "src/Layout/Layout";
 import aboutDetail from "public/img/aboutDetail.png";
 import Image from "next/image";
+import { Layout } from "src/Layout";
 
 const About: CustomNextPage = () => {
   return (
