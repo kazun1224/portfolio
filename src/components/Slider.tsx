@@ -5,18 +5,16 @@ import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import pic404 from "public/img/404.png";
 import pic from "public/swiper-img/スクリーンショット (42).png";
 import pic1 from "public/swiper-img/3919204_s.jpg";
+import "swiper/css";
+import "swiper/css/pagination";
 
 SwiperCore.use([Pagination, Navigation, Autoplay]);
 
-// // カルーセルにする画像のソースをリストにします
 // const images = [
 //   '/public/swiper-img/スクリーンショット (42).png',
 //   '/public/swiper-img/スクリーンショット (42).png',
 //   '/public/swiper-img/スクリーンショット (42).png',
 // ]
-
-import "swiper/css";
-import "swiper/css/pagination";
 
 export const Slider: FC = () => {
   return (
