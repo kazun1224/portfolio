@@ -1,12 +1,10 @@
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react"; //カルーセル用のタグをインポート
+import { Swiper, SwiperSlide } from "swiper/react";
 import { FC } from "react";
 import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
-import pic404 from "public/img/404.png";
-import pic from "public/swiper-img/スクリーンショット (42).png";
-import pic1 from "public/swiper-img/3919204_s.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
+import pic from "public/swiper-img/test.jpg";
 
 const images = [pic, pic, pic, pic, pic, pic];
 SwiperCore.use([Pagination, Navigation, Autoplay]);
