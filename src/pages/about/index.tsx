@@ -2,6 +2,7 @@ import type { CustomNextPage } from "next";
 import aboutDetail from "public/img/aboutDetail.png";
 import Image from "next/image";
 import { Layout } from "src/Layout";
+import { Slider } from "src/components/Slider";
 
 const About: CustomNextPage = () => {
   return (
@@ -71,6 +72,7 @@ const About: CustomNextPage = () => {
           {/* <!-------------------------------- section ---------------------------------------> */}
         </div>
       </div>
+      <Slider/>
     </div>
   );
 };
