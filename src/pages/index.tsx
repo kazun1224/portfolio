@@ -14,6 +14,7 @@ const Home: CustomNextPage<PropsList> = (props) => {
 
   return (
     <div>
+      {/* <!-------------------------------- main ---------------------------------------> */}
       <section className="flex flex-col-reverse justify-between gap-20 pb-20 text-center  md:flex-row md:gap-16 md:pb-32">
         {/* <!-- content - start --> */}
         <div className="flex flex-col justify-center md:text-left lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
@@ -45,7 +46,7 @@ const Home: CustomNextPage<PropsList> = (props) => {
         </div>
         {/* <!-- image - end --> */}
       </section>
-      {/* <!-------------------------------- section ---------------------------------------> */}
+      {/* <!-------------------------------- about ---------------------------------------> */}
 
       <section className="px-4 pb-20 md:px-8 md:pb-32">
         <div className="grid place-items-center gap-8 md:grid-cols-2 lg:gap-12">
@@ -67,13 +68,26 @@ const Home: CustomNextPage<PropsList> = (props) => {
             </h2>
 
             <p className="mb-6 text-gray-500 sm:text-lg md:mb-8">
-              親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せますと答えた。（青空文庫より）
+              学生時代はバレーボールで全国大会を目指して切磋琢磨してました。
+              <br />
+              社会人になってからは、スポーツで培った継続力を活かして勤労。
+              <br />
+              大手家電メーカー、外交員、営業、Web制作などを様々な業務を経験。
+              <br />
+              <br />
+              個人事業主としての経験を活かし、経営者やユーザー目線で使いやすく、私生活をより有意義にできるような
+              仕組みを作ることができればと考えています。
+              <br />
+              何を作るかよりなぜ作るかを意識して、達観した視点で新しいものを作り
+              DXを推進する動きに貢献していきたいと思っています。
+              <br />
+              今後はNext.js,TypeScriptを中心に様々なアプリケーションを作成して経験を増やしていきます。
             </p>
           </div>
         </div>
       </section>
 
-      {/* <!-------------------------------- section ---------------------------------------> */}
+      {/* <!-------------------------------- works ---------------------------------------> */}
       <div className="pb-20 md:pb-32">
         <div className="mx-auto max-w-screen-xl px-4 md:px-8">
           {/* <!-- text - start --> */}
@@ -132,7 +146,7 @@ const Home: CustomNextPage<PropsList> = (props) => {
           </div>
         </div>
       </div>
-      {/* <!-------------------------------- section ---------------------------------------> */}
+      {/* <!-------------------------------- contact ---------------------------------------> */}
       <div className="pb-20 md:pb-32">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className=" flex flex-col items-center justify-between gap-10 rounded-lg bg-gray-100 py-9 px-6 text-center sm:flex-row sm:gap-4 sm:p-4 sm:text-left md:p-8">
