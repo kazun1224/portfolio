@@ -8,15 +8,25 @@ import pic1 from "public/swiper-img/3919204_s.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 
+const images = [pic, pic, pic, pic, pic, pic];
 SwiperCore.use([Pagination, Navigation, Autoplay]);
 
-// const images = [
-//   '/public/swiper-img/スクリーンショット (42).png',
-//   '/public/swiper-img/スクリーンショット (42).png',
-//   '/public/swiper-img/スクリーンショット (42).png',
-// ]
-
 export const Slider: FC = () => {
+  const getViewportSize = () => {
+    if (typeof window === "object") {
+      const w = Math.max(
+        document.documentElement.clientWidth,
+        window.innerWidth || 0
+      );
+
+      if (w >= 768) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  };
+
   return (
     <>
       <Swiper
@@ -32,51 +42,19 @@ export const Slider: FC = () => {
         loop={true}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <Image
-            src={pic404}
-            layout="responsive"
-            width={640}
-            height={400}
-            alt="test_image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={pic}
-            layout="responsive"
-            width={640}
-            height={400}
-            alt="test_image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={pic}
-            layout="fill"
-            width={640}
-            height={400}
-            alt="test_image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={pic1}
-            layout="responsive"
-            width={640}
-            height={400}
-            alt="test_image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={pic1}
-            layout="responsive"
-            width={640}
-            height={400}
-            alt="test_image"
-          />
-        </SwiperSlide>
+        {images.map((img, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <Image
+                src={img}
+                layout="responsive"
+                width={640}
+                height={400}
+                alt="test_image"
+              />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </>
   );
