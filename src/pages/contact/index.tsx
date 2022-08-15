@@ -10,9 +10,12 @@ const Contact: CustomNextPage = () => {
           Contact
         </h2>
         <p className="mx-auto max-w-screen-md  text-gray-500 md:text-lg">
-
-          <span className="text-red-500">※申し訳ございませんが現在フォームからお問い合わせできません。</span><br />
-          お手数おかけしますが下記のメールアドレスへお問い合わせお願いいたします。<br />
+          <span className="text-red-500">
+            ※申し訳ございませんが現在フォームからお問い合わせできません。
+          </span>
+          <br />
+          お手数おかけしますが下記のメールアドレスへお問い合わせお願いいたします。
+          <br />
           <span className="underline">qp.vv.3199@gmail.com</span>
         </p>
       </div>
