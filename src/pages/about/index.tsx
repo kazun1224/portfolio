@@ -43,8 +43,7 @@ const About: CustomNextPage = () => {
               何を作るかよりなぜ作るかを意識して、達観した視点で新しいものを作り出します。
               今後はDXを推進する動きに貢献していきたいと思っています。
               <br />
-              <br />
-              中心に様々なプロジェクトに参画して経験を増やしていきたいです。
+              Next.js,TypeScriptを中心に様々なアプリケーションを作成して経験を増やしていきたいです。
             </p>
           </div>
 
@@ -57,15 +56,15 @@ const About: CustomNextPage = () => {
               <dl>
                 <div className="flex w-full p-2">
                   <dt className="w-4/12">趣味</dt>
-                  <dd className="w-8/12">BBQ 洋画鑑賞</dd>
+                  <dd className="w-8/12">BBQ,洋画鑑賞</dd>
                 </div>
                 <div className="flex w-full p-2">
                   <dt className="w-4/12">好きなスポーツ</dt>
-                  <dd className="w-8/12">バレーボール バスケットボール</dd>
+                  <dd className="w-8/12">バレーボール、バスケットボール</dd>
                 </div>
                 <div className="flex w-full p-2">
                   <dt className="w-4/12">好きな映画</dt>
-                  <dd className="w-8/12">アイアンマン 007 オーシャンズ11</dd>
+                  <dd className="w-8/12">アイアンマン,007,オーシャンズ11</dd>
                 </div>
               </dl>
             </div>
