@@ -98,12 +98,12 @@ const Home: CustomNextPage<PropsList> = (props) => {
             </h2>
 
             <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
-              This is a works.
+              実績
             </p>
           </div>
           {/* <!-- text - end --> */}
 
-          <div className="mb-10 grid gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-2 xl:grid-cols-2 xl:gap-16">
+          <div className="mb-10 grid gap-8 sm:grid-cols-2 sm:gap-12 md:mb-20 lg:grid-cols-2 xl:grid-cols-2 xl:gap-16">
             {/* <!-- article - start --> */}
 
             {/* <!-- article - end --> */}
@@ -125,7 +125,7 @@ const Home: CustomNextPage<PropsList> = (props) => {
                           />
                         </div>
 
-                        <div className="flex flex-col gap-2">
+                        <div className="flex w-full flex-col gap-2">
                           <h2 className="text-xl font-bold text-gray-800">
                             {content.title}
                           </h2>
